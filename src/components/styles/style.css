@@ -1,0 +1,175 @@
+@font-face {
+  font-family: kanit-bold;
+  src: url(./../../assets/fonts/kanit-bold.woff);
+}
+@font-face {
+  font-family: kanit-bold2;
+  src: url(./../../assets/fonts/kanit-bold.woff2);
+}
+@font-face {
+  font-family: kanit-semibold;
+  src: url(./../../assets/fonts/kanit-semibold.woff);
+}
+* {
+  font-family: kanit-bold;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-X: hidden;
+  background: black;
+}
+
+header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(233, 200, 200);
+  overflow: hidden;
+}
+header nav {
+  position: relative;
+  width: 30vw;
+  animation: header 0.7s ease-in-out;
+}
+header nav ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+header nav ul li {
+  text-decoration: none;
+  list-style: none;
+  margin: 0.2em;
+}
+header nav ul li a {
+  font-family: kanit-semibold;
+  color: rgb(233, 200, 200);
+  font-weight: lighter;
+  text-transform: capitalize;
+  transition: 0.2s ease-in;
+}
+header nav ul li a:hover {
+  color: white;
+}
+header .logo {
+  margin: 3em 0 0 0;
+  position: relative;
+  opacity: 0;
+  animation: header 0.7s ease-in-out both;
+  animation-delay: 0.2s;
+}
+header .logo h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+}
+header .logo h1 span {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+header .logo h1 span:nth-child(1) {
+  font-size: 2em;
+}
+header .icon {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  cursor: pointer;
+  position: relative;
+  animation: header 0.7s ease-in-out;
+}
+header .icon svg {
+  padding: 0.5em;
+  transition: 0.2s ease-in;
+}
+header .icon svg:hover {
+  color: white;
+}
+
+section {
+  padding-top: 3em;
+  width: 100vw;
+}
+section .title {
+  width: 100%;
+}
+section .title h2 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-family: kanit-bold2;
+  overflow: hidden;
+}
+section .title h2 span {
+  text-transform: uppercase;
+  font-size: 2.5em;
+  opacity: 0;
+}
+section .title h2 .title_ambony {
+  position: relative;
+  animation: title 0.5s ease-in both;
+  animation-delay: 0.1s;
+}
+section .title h2 .title_ambany {
+  color: black;
+  text-shadow: 0 0 3px white;
+  position: relative;
+  animation: title 0.5s ease-in both;
+  animation-delay: 0.2s;
+}
+section .images {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+section .images .contenent {
+  min-width: 24em;
+  max-width: 33vw;
+  border: 1px solid transparent;
+  overflow: hidden;
+}
+section .images .contenent img {
+  width: 100%;
+  position: relative;
+  animation: image 0.7s linear both;
+}
+
+@keyframes header {
+  0% {
+    top: -3em;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes title {
+  0% {
+    bottom: -1em;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+@keyframes image {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
